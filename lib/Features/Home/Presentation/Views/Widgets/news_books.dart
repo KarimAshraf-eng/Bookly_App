@@ -1,5 +1,5 @@
 import 'package:bookly_app/Core/constent.dart';
-import 'package:bookly_app/Features/HomeDetails/Views/home_details_view.dart';
+import 'package:bookly_app/Features/HomeDetails/Presentation/Views/home_details_view.dart';
 import 'package:flutter/material.dart';
 
 class NewsBooks extends StatelessWidget {
