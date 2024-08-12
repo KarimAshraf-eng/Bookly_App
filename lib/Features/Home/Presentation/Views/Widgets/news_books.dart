@@ -1,4 +1,5 @@
 import 'package:bookly_app/Core/constent.dart';
+import 'package:bookly_app/Features/HomeDetails/Views/home_details_view.dart';
 import 'package:flutter/material.dart';
 
 class NewsBooks extends StatelessWidget {
@@ -13,8 +14,17 @@ class NewsBooks extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(15),
-        child: Image.network(
-            testImage),
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const HomeDetailsView(),
+              ),
+            );
+          },
+          child: Image.network(testImage),
+        ),
       ),
     );
   }
